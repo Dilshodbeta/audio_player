@@ -35,7 +35,7 @@ class MusicList extends StatelessWidget {
                   ),
                   InkWell(
                     onTap: () {
-                      Navigator.pushNamed(context, "musicPage");
+                      Navigator.pushNamed(context, "HomePage");
                     },
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -80,6 +80,10 @@ class MusicList extends StatelessWidget {
                     ),
                   ),
                   Spacer(),
+                  Container(
+                    margin: EdgeInsets.only(top: 15, right: 15, left: 15),
+                    padding: EdgeInsets.symmetric(),
+                  ),
                   Container(
                     height: 35,
                     width: 35,
