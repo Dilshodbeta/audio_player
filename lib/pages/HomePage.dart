@@ -1,3 +1,4 @@
+import 'package:audio_player/pages/MusicPage.dart';
 import 'package:audio_player/pages/PlaylistPage.dart';
 import 'package:audio_player/widgets/MusicList.dart';
 import 'package:audio_player/widgets/PlayList.dart';
@@ -37,7 +38,9 @@ class HomePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.pushNamed(context, "MusicPage");
+                          },
                           child: Icon(
                             Icons.sort_rounded,
                             color: Colors.green,
