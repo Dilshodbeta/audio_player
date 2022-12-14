@@ -30,7 +30,7 @@ class PlaylistPage extends StatelessWidget {
                   children: [
                     InkWell(
                       onTap: () {
-                        Navigator.pop(context, "HomePage");
+                        Navigator.pushNamed(context, "MusicPage");
                       },
                       child: Icon(
                         CupertinoIcons.back,
@@ -40,7 +40,7 @@ class PlaylistPage extends StatelessWidget {
                     ),
                     InkWell(
                       onTap: () {
-                        Navigator.pop(context, "HomePage");
+                        Navigator.pop(context, "MusicPage");
                       },
                       child: Icon(
                         Icons.more_vert,
